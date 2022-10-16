@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Silkscreen&display=swap");
+/* ..............HEader............... */
+header {
+  width: 80vh;
+  padding: 20px;
+  text-align: center;
+  font-family: "Courgette", cursive;
+   letter-spacing:  1px;
+}
+
+/* ......................CV......................... */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.TALK:hover {
+  background: none;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.CV:hover {
+  background: var(--color-primary);
+}
+/* .............Image..................... */
+.me > img {
+  /* border: 3px solid red; */
+  border-radius: 2rem;
+  margin-top: 20px;
+  width: 650px;
+  height: 430px;
+  opacity:0.8;
+}
+/* .................Social.................Social.................... */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  z-index: 2;
+}
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 10rem;
+  background: var(--color-primary);
+}
+@media screen and (max-width: 1024px) {
+.header__socials::after{
+  height: 5rem;
+}
+.header__socials{
+  left: 5rem;
+}
+header{
+  width:max-content;
+  /* font-size: medium; */
+}
+
+}
+@media screen and (max-width: 600px) {
+.header__socials{
+  display: none;
+}
+header{
+  width: 100%;
+}
+.container>h1{
+  font-size: 25px;
+}
+.me>img{
+  width: 300px;
+}
+.cta{
+  gap:10px
+}
+.me > img {
+width:95%;
+margin: auto;
+}
+header {
+  width:max-content;
+}
+}
